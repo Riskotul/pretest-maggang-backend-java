@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja</title>
+    <style>
+        /* Styling for simplicity */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .cart-item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+        .cart-item img {
+            max-width: 100px;
+            height: auto;
+            float: left;
+            margin-right: 10px;
+        }
+        .cart-item p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Keranjang Belanja</h1>
+    
+    <div class="cart-item">
+        <img src="https://via.placeholder.com/100" alt="Product Image">
+        <h2>Produk 1</h2>
+        <p>Jumlah: 1</p>
+        <p>Harga: Rp 100.000</p>
+        <button onclick="removeFromCart(1)">Hapus dari Keranjang</button>
+    </div>
+    
+    <div class="cart-item">
+        <img src="https://via.placeholder.com/100" alt="Product Image">
+        <h2>Produk 2</h2>
+        <p>Jumlah: 2</p>
+        <p>Harga: Rp 150.000</p>
+        <button onclick="removeFromCart(2)">Hapus dari Keranjang</button>
+    </div>
+
+    <!-- Add more items as needed -->
+
+    <p>Total Belanja: Rp 250.000</p>
+    <button onclick="checkout()">Checkout</button>
+
+    <script>
+        function removeFromCart(productId) {
+            // Implement logic to remove product from cart
+            alert('Produk ' + productId + ' telah dihapus dari keranjang!');
+        }
+
+        function checkout() {
+            // Implement logic for checkout process
+            alert('Proses checkout selesai!');
+        }
+    </script>
+</body>
+</html>
